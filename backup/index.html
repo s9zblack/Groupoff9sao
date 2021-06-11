@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghim GR Off9sao</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body background-image="2-1440133142840.gif">
+    <div id="main-home">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="boss.html">Boss</a></li>
+                <li><a href="ad1.html">AD1</a></li>
+                <li><a href="ad2.html">AD2</a></li>
+                <li><a href="ad3.html">AD3</a></li>
+                <li><a href="ad4.html">AD4</a></li>
+                <li><a href="ad5.html">AD5</a></li>
+                <li><a href="ad6.html">AD6</a></li>
+                <li><a href="kdv.html">KDV</a></li>
+
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"> MENU</i>
+            </div>
+        </div>
+
+        <div id="slider"></div>
+        <!-- Begin Content -->
+
+            <div id="group" class="tour-section">
+                <div id="tour" class="content-section">
+                    <h2 class="section-heading ">Group Off9sao</h2>
+                    <p class="section-sub-heading ">Everyone should join!</p>
+                    <a href="https://www.facebook.com/groups/sv9daylanha" class="place-buy-btn">Click để vào Group</a>
+                    <p class="demo-gr">Group giúp AE giao lưu mua bán, trao đổi kinh nghiệm về game, hỗ trợ các dịch vụ game, GD an toàn tuyệt đối 100% khi trung gian qua ADMIN, tránh tình trạng lừa đảo tràn lan!</p>
+                   
+
+
+            </div>
+            <!-- Begin Contact section -->
+            <!-- End Contact section -->
+
+            <div class="map-section">
+                <img src="https://i.pinimg.com/originals/e3/71/95/e371954d7029b4d3b66c95ddc7be5c2b.gif" alt="Map" style="width: 100%;">
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <div class="social">
+               <a href="https://www.facebook.com/bedatdz.ly/"><i class="ti-facebook"></i></a>
+               <a href="https://www.youtube.com/channel/UC1vUNlhCKDcS_Ibqw8deuvQ"><i class="ti-youtube"></i></a>
+            </div>
+            <p class="copyright">Design by <a href="https://www.facebook.com/bedatdz.ly/" class="link-design">Datisekai</a></p>
+        </div>
+    </div>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight =  header.clientHeight;
+
+        //Dong mo mobile menu
+        mobileMenu.onclick = function() {
+           var isClosed = header.clientHeight === headerHeight;
+           if (isClosed){
+               header.style.height = 'auto';
+           } else {
+               header.style.height = null;
+           }
+        }
+        //tu dong dong khi chon menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for ( var i = 0;i<menuItems.length;i++)
+        {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function(event) {
+                var isParentMenu=this.nextElementSibling &&this.nextElementSibling.classList.contains('subnav');
+               if (!isParentMenu) {
+                header.style.height = null;
+               } 
+        }
+    }
+    </script>
+</body>
+</html>

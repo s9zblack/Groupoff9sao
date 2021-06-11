@@ -1,0 +1,283 @@
+/* Reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url("");
+}
+body
+{
+    /* background: url("../2-1440133142840.gif"); */
+    background-attachment: fixed;
+    
+}
+html {
+    scroll-behavior:smooth;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+/*
+1. Vi tri
+2. Kich thuoc (width, height)
+3. Mau sac
+4. Kieu dang
+*/
+#main {
+    background: url(http://pa1.narvii.com/6462/3ac40f7cd3704ef6609c42324713453dfa10aea0_hq.gif) bottom center/ cover no-repeat;
+}
+
+#header {
+    height: 46px;
+    background-color:black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+   z-index: 1;
+}
+#nav {
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+}
+
+#nav > li > a{
+    color :white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a {   
+    color: black;
+    background-color: #ccc;
+    display: inline-block;
+}
+
+#header .mobile-menu-btn{
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#header .mobile-menu-btn:hover{
+    color: white;
+    background-color: #f44366;
+}
+#header .menu-icon{
+    color: #fff;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+   
+}
+
+#slider {
+    margin-top: 46px;
+    /* padding-top: 50%; */
+    /* background: url(https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/120149760_2680056572312162_3048726561382221867_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=825194&_nc_ohc=nY6JDPx2vjIAX_nKg0V&_nc_ht=scontent-sin6-4.xx&oh=dc25af621cf53b7f4efae610e6e31d96&oe=60C7B458) top center/cover  no-repeat; */
+
+}
+#content {
+  /* background: url(https://i.pinimg.com/originals/89/2c/b0/892cb0a20c2722b86b995158ca46b543.gif) top center/cover no-repeat; */
+}
+#ad6 {
+    margin-top: 40px
+}
+#group{
+    margin-top: 50px;
+}
+#content .warning{
+    color:darkorange;
+    text-align: center;
+    margin-top: 15px;
+    
+
+}
+.content-section {
+    width: 800px;
+    max-width: 100%;
+    padding: 54px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    text-shadow: 0 0 2px white;
+    
+}
+#content .section-heading {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: red;
+}
+#content .section-gd{
+    font-size: 25px;
+    text-align: center;
+    color: blue;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+#content .name-boss{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;/*chu nghieng*/
+    opacity: 0.6;
+    text-decoration: none;
+
+}
+#content .shop-boss{
+    font-size: 25px;
+    color: white;
+    background-color:black;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+#content .shop-boss:hover{
+    opacity: 0.6;
+}
+#content .boss-name{
+    margin-top: 50px;
+    font-size: 25px;
+    line-height: 1.5;
+    text-shadow:blue;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+}
+#content .survice-ad li {
+    display: block;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 800;
+    color:red;
+}
+#content .survice-name{
+    font-size: 25px;
+    color: red;
+    font-weight: 800;
+    margin-top: 30px;
+}
+#content .ti-facebook{
+   
+}
+#content .about-text{
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .member-list{
+    margin-top: 48px;
+}
+#content .member-item{
+
+    text-align: center;
+}
+#content .member-name{
+    font-size: 15px;
+}
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+#content .clear{
+    clear: both;
+}
+.text-white {
+    color: white !important;
+}
+.tour-section {
+    /* background-color:#757575; */
+    text-align: center;
+    text-shadow: 0 0 1px black;
+    /* background: url(https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-3-1024x682.jpg) top center/cover no-repeat; */
+}
+#content .ticket-list{
+    margin-top: 40px;
+    background-color: white;
+    list-style: none;
+}
+.ticket-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.place-buy-btn{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.place-buy-btn:hover{
+    color:black;
+    background-color: #ccc;
+}
+.demo-gr{
+    margin-top: 15px;
+    color::red;
+    font-size: 15px;
+}
+/* Contact form */
+.map-section{
+    margin-top: 50px;
+    width: 100%;
+}
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    text-shadow: 0 0 1px black;
+}
+#footer .social{
+    font-size: 24px;
+}
+#footer .social a{
+    color:green;
+    text-decoration: none;
+    text-shadow: 0 0 2px white;
+}
+#footer .social a:hover{
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.3;
+}
+#footer .copyright{
+    margin-top: 15px;
+    color: green;
+    font-size: 15px;
+}
+#footer .link-design{
+    color:coral;
+}
+#footer .copyright a:hover{
+    opacity: 0.3;
+}
